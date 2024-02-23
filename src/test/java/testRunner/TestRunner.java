@@ -7,7 +7,8 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(// features = (".//Features/Login.feature"),
-		features = (".//Features/LoginDDT.feature"), 
+		//features = (".//Features/LoginDDT.feature"),
+		features = {".//Features/RegisterNewAccount.feature"},
 			glue = "stepDefinitions", 
 			plugin = { "pretty",
 						"html:reports/myreport.html", "rerun:target/rerun.txt"},
